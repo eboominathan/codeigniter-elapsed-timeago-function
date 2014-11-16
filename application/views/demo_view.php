@@ -7,7 +7,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-        
+
     </head>
     <body style="background-image: url(<?php echo base_url() . 'assets/background.jpg'; ?>);">
         <div class="row" style="margin-bottom:20px;">
@@ -28,7 +28,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4" id="addName">
                 <?php foreach ($names as $name){?>
-                <p style="color:white;text-transform: uppercase;text-align: center;" ><strong><?php echo $name['name'];?> </strong> was here. <?php echo  $this->mtimeago->time_ago($name['timestamp']);?></p>
+                <p style="text-transform: uppercase;text-align: center;" ><strong><?php echo $name['name'];?> </strong> was here. <?php echo  $this->mtimeago->time_ago($name['timestamp']);?></p>
                 <hr>
                 <?php }?>
             </div>
